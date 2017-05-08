@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 import wdsr.exercise4.sender.JmsSender;
 
 public class Main {
-	static final String QUEUE_NAME = "rafzz.QUEUE";
+	static final String QUEUE_NAME = "RAFZZ.QUEUE";
 	static final int NON_PERSISTENT_MODE = 1;
 	static final int PERSISTENT_MODE = 2;
 
