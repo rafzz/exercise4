@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>exercise4-persistence_queue_consumer</name>
-	<comment>Project exercise4-persistence_queue_consumer created by Buildship.</comment>
+	<name>topic_publisher</name>
+	<comment>Project topic_publisher created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
