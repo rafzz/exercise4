@@ -25,6 +25,7 @@ public class Main {
 	
 	private static long sendMessages(int mode){
 		JmsSender sendingService = new JmsSender(QUEUE_NAME);
+		//sendingService.connect();
 		long start;
 		long stop;
 		start = System.currentTimeMillis();
@@ -34,6 +35,7 @@ public class Main {
 
 		stop = System.currentTimeMillis();
 		
+		sendingService.close();
 		return stop - start;
 	}
 
