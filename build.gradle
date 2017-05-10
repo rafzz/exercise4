@@ -11,7 +11,7 @@ repositories {
 
 ext {
     springVersion = '4.2.5.RELEASE'
-    activemqVersion = '5.14.5'
+    activemqVersion = '5.13.2'
 	log4jVersion = '2.5'
     junitVersion = '4.12'
 	

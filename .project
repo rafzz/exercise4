@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>topic_publisher</name>
-	<comment>Project topic_publisher created by Buildship.</comment>
+	<name>exercise4-persistence_topic_subscriber</name>
+	<comment>Project exercise4-persistence_topic_subscriber created by Buildship.</comment>
 	<projects>
 	</projects>
 	<buildSpec>
