@@ -33,6 +33,7 @@ public class Main {
 
 		stop = System.currentTimeMillis();
 		
+		sendingService.close();
 		return stop - start;
 	}
 

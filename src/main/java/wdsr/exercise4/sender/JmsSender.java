@@ -24,6 +24,11 @@ public class JmsSender {
 	public JmsSender(final String queueName) {
 		this.topicName = queueName;
 		connectionFactory = new ActiveMQConnectionFactory("tcp://localhost:61616");
+		try {
+		connect();
+		} catch (JMSException e) {
+			e.printStackTrace();
+		}
 	}
 
 	private void connect() throws JMSException {
@@ -38,19 +43,29 @@ public class JmsSender {
 	public void sendTextToTopic(String text,int mode) {
 		try {
 
-			connect();
+			//connect();
 			destination = session.createTopic(topicName);
 			producer = session.createProducer(destination);
-			connection.start();
+			//connection.start();
 			TextMessage message = session.createTextMessage(text);
 			producer.setDeliveryMode(mode);
 			producer.send(message);
-			session.close();
-			connection.close();
+			//session.close();
+			//connection.close();
 
 		} catch (JMSException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	public void close(){
+		try {
+			session.close();
+			connection.close();
+		} catch (JMSException e) {
+			e.printStackTrace();
+		}
+		
 	}
 	
 	
